@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3AB516602DBC720E00E7B0EF /* Mantis in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB5165F2DBC720E00E7B0EF /* Mantis */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3AD953952DB45E4F000261FB /* ScanMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3AB516132DB9C6F900E7B0EF /* Exceptions for "ScanMate" folder in "ScanMate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3AD953942DB45E4F000261FB /* ScanMate */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3AD953972DB45E4F000261FB /* ScanMate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3AB516132DB9C6F900E7B0EF /* Exceptions for "ScanMate" folder in "ScanMate" target */,
+			);
 			path = ScanMate;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB516602DBC720E00E7B0EF /* Mantis in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = ScanMate;
 			packageProductDependencies = (
+				3AB5165F2DBC720E00E7B0EF /* Mantis */,
 			);
 			productName = ScanMate;
 			productReference = 3AD953952DB45E4F000261FB /* ScanMate.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = 3AD9538C2DB45E4F000261FB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3AB5165E2DBC720E00E7B0EF /* XCRemoteSwiftPackageReference "Mantis" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3AD953962DB45E4F000261FB /* Products */;
 			projectDirPath = "";
@@ -255,6 +277,7 @@
 				DEVELOPMENT_TEAM = K7C2SCNHZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanMate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +307,7 @@
 				DEVELOPMENT_TEAM = K7C2SCNHZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScanMate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +348,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3AB5165E2DBC720E00E7B0EF /* XCRemoteSwiftPackageReference "Mantis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/guoyingtao/Mantis.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AB5165F2DBC720E00E7B0EF /* Mantis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3AB5165E2DBC720E00E7B0EF /* XCRemoteSwiftPackageReference "Mantis" */;
+			productName = Mantis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3AD9538D2DB45E4F000261FB /* Project object */;
 }
